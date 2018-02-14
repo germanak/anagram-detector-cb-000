@@ -1,4 +1,5 @@
 # Your code goes here!
+
 class Anagram
   attr_accessor :word
 
@@ -9,4 +10,6 @@ class Anagram
   def match(word_array)
     word_array.detect {|element| element.split("").sort.join("") == @word.split("").sort.join("")}
   end
+
+  binding.pry
 end
